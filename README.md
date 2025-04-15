@@ -7,6 +7,9 @@ However, said package manager unfortunately cannot install from a remote - you n
 
 `nucrab` (very creative name, I know) changes that!
 
+## Installation
+`cargo install nucrab`
+
 ## Backwards compatibility
 Right now `nucrab` isn't fully backwards compatible with `nupm`.
 
