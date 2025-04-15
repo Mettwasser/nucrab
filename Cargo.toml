@@ -1,0 +1,25 @@
+[package]
+name = "nucrab"
+version = "0.1.0"
+edition = "2024"
+readme = "./README.md"
+description = "A simple package manager for nushell. Compatible with nupm."
+license = "MIT"
+repository = "https://github.com/Mettwasser/nucrab"
+
+[dependencies]
+anyhow = "1.0.98"
+clap = { version = "4.5.36", features = ["cargo", "derive"] }
+derive_more = { version = "2.0.1", features = ["full"] }
+indicatif = "0.17.11"
+nu-protocol = { version = "0.103.0", default-features = false }
+nuon = "0.103.0"
+octocrab = "0.44.0"
+reqwest = "0.12.15"
+thiserror = "2.0.12"
+tokio = { version = "1.44.2", features = [
+    "io-util",
+    "fs",
+    "macros",
+    "rt-multi-thread",
+] }
